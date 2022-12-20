@@ -1,0 +1,31 @@
+package practice;
+import java.util.Scanner; //класс который помогает считывать данный введеные пользователем
+public class practice2 {
+public static void main(String[] args){
+int[]array= new int[5];
+int i=0;
+int Sum = 0;
+Scanner in = new Scanner(System.in);
+System.out.println("Введите элементы массива");
+while (i < 5) {
+array[i]=in.nextInt();
+Sum=Sum+array[i];
+i++;
+}
+System.out.println("Сумма = "+ Sum);
+int min = array[0];
+for (int f=0; f<array.length; f++){
+if (min > array[f]){
+min = array[f];
+}
+}
+System.out.println("Минимальный элемент массива: " + min);
+int max = array[0];
+for (int f=0; f<array.length; f++){
+if (max < array[f]){
+max = array[f];
+}
+}
+System.out.println("Максимальный элемент массива: " + max);
+}
+}
