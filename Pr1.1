@@ -1,0 +1,14 @@
+package practice;
+public class practice1 {
+public static void main(String[] args){
+int b[] = {1, 1, 2, 3, 4, 3, 2, 1, 1}; //создание массив целочисленных значений
+int sum = 0;
+int average = 0;
+for (int i = 0; i < b.length; i++){
+sum += b[i];
+}
+average = sum / b.length;
+System.out.println("Сумма ровна: " + sum);
+System.out.println("Среднее Арифметическое равно: " + average);
+}
+}
