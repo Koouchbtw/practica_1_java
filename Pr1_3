@@ -1,0 +1,10 @@
+package practice;
+public class practice3
+{
+public static void main(String[] args)
+{
+System.out.println("Proverka komandnoy stroki");
+for(int i = 0; i< args.length; i++)
+System.out.println("Аргумент №"+i+": args[" + i +"]=" +args[i]);
+}
+}
